@@ -1,0 +1,6 @@
+esptool
+mpremote
+
+#The following two are to help you work when using IDEs like PyCharm
+micropython-esp32-esp32-generic-s3-stubs
+micropython-ssd1306-driver
