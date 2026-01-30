@@ -6,7 +6,7 @@ Coded by [Kyriakos Giannakis](https://www.linkedin.com/in/kgiannakis/) - [Flare]
 
 I recently purchased a Heltec V4 board and wanted to flash MicroPython and see if I can get it working on a simple LoRa TX/RX.
 
-In this repo, I'll be documenting the full way to get MicroPython working on this board, do a full LoRa TX/RX example, as well as get the OLED working.
+In this repo, I'll be documenting the full way to get MicroPython working on this board and add various examples on the different functionalities.
 
 ## Step 1 - Get the tools
 
