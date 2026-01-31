@@ -30,10 +30,11 @@ def decrypt(packet: bytes) -> bytes:
     cipher = aes(CRYPT_KEY, 2, iv)
     return unpad(cipher.decrypt(data))
 
-def update_display(counter):
+def update_display(counter, rx):
     display.fill(0)
     display.text("Receiving...", 0, 0, 1)
     display.text(str(counter), 0, 12, 1)
+    display.text(f"RSSI: {rx.rssi}", 0, 24, 1)
     display.show()
 
 def main():
@@ -53,7 +54,7 @@ def main():
             print("Received: ", rx)
             print(f"Received (after decryption): {decrypt(rx)}")
             rx_counter += 1
-            update_display(rx_counter)
+            update_display(rx_counter, rx)
         else:
             print("RX Timeout!")
         time.sleep(1)

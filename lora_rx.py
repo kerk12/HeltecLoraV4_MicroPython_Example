@@ -11,10 +11,11 @@ LORA_CFG = {
     "invert_iq": False,
 }
 
-def update_display(counter):
+def update_display(counter, rx):
     display.fill(0)
     display.text("Receiving...", 0, 0, 1)
     display.text(str(counter), 0, 12, 1)
+    display.text(f"RSSI: {rx.rssi}", 0, 24, 1)
     display.show()
 
 def main():
@@ -33,7 +34,7 @@ def main():
         if rx:
             print(f"Received: {rx}")
             rx_counter += 1
-            update_display(rx_counter)
+            update_display(rx_counter, rx)
         else:
             print("RX Timeout!")
         time.sleep(1)
