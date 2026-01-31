@@ -64,7 +64,7 @@ If you find that your controller is unresponsive and doesn't want to connect to 
 
 - [X] TX Example
 - [X] RX Example
-- [ ] Encryption Example
+- [X] Encryption Example
 - [ ] Deep Sleep
 
 ## Contributions:
